@@ -10,6 +10,7 @@
   margin: auto;
 }
 
+
 /*HEADER*/
 header {
   display: flex;
@@ -19,11 +20,14 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-top: 3%;
 }
 
 nav a {
   text-decoration: none;
-  margin-right: 25px;
+  color: rgb(139, 149, 158);
+  font-size: 15px;
+  font-family: verdana;
 }
 
 .left_items {
@@ -31,13 +35,142 @@ nav a {
   align-items: center;
 }
 
-.left_items a img {
+.left_items img {
   width: 110px;
   height: auto;
+}
+
+.left_items > a {
+  text-transform: uppercase;
+  margin-right: 25px;
+
 }
 
 .right_items {
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.right_items > a {
+  margin-right: 25px;
+}
+
+.text_black {
+  color: black;
+}
+
+
+/* menù di dropdown su Accounts*/
+#drop_accounts {
+  width: 90px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(214, 214, 212, 0.8);
+}
+
+#drop_accounts a {
+padding-left: 10px;
+line-height: 3;
+}
+
+#drop_accounts.active {
+  display: block;
+}
+
+
+/* menù di dropdown su Products*/
+#drop_products {
+  width: 250px;
+  position: absolute;
+  top: 40px;
+  left: 130px;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(214, 214, 212, 0.8);
+}
+
+#drop_products a {
+padding-left: 20px;
+line-height: 3;
+}
+
+#drop_products.active {
+  display: block;
+}
+
+
+/* menù di dropdown su Company*/
+#drop_company {
+  width: 110px;
+  position: absolute;
+  top: 40px;
+  left: 245px;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(214, 214, 212, 0.8);
+}
+
+#drop_company a {
+padding-left: 10px;
+line-height: 3;
+}
+
+#drop_company.active {
+  display: block;
+}
+
+
+/* menù di dropdown su Help*/
+#drop_help {
+  width: 110px;
+  position: absolute;
+  top: 40px;
+  left: 320px;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(214, 214, 212, 0.8);
+}
+
+#drop_help a {
+padding-left: 10px;
+line-height: 3;
+}
+
+#drop_help.active {
+  display: block;
+}
+
+
+/* menù di dropdown su EN*/
+#drop_en {
+  width: 80px;
+  position: absolute;
+  top: 40px;
+  left: 380px;
+  display: none;
+  box-shadow: 2px 2px 5px rgba(214, 214, 212, 0.8);
+}
+
+#drop_en a {
+padding-left: 10px;
+line-height: 3;
+}
+
+#drop_en.active {
+  display: block;
+}
+
+
+.get_button {
+  background-color: #EB008D;
+  text-decoration: none;
+  border-style: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 13px 23px;
+  color: white;
+  font-size: 15px;
+  font-family: verdana;
 }
