@@ -1,0 +1,43 @@
+/*REGOLE GENERALI*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont_center {
+  width: 85%;
+  margin: auto;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.left_items {
+  display: flex;
+  align-items: center;
+}
+
+.left_items a img {
+  width: 110px;
+  height: auto;
+}
+
+.right_items {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
